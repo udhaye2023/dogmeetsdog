@@ -16,7 +16,7 @@ provider "aws" {
 }
 
 resource "aws_instance" "dogmeetsdog_server" {
-  ami           = "ami-04e914639d0cca79a"
+  ami           = "ami-0fc5d935ebf8bc3bc"
   instance_type = "t2.micro"
   user_data = <<EOF
 #!/bin/bash
