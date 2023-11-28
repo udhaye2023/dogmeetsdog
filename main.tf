@@ -11,8 +11,8 @@ terraform {
 
 provider "aws" {
   region  = "us-east-1c"
-  access_key = "AKIAY7FKYOSFACVWKNCC"
-  secret_key = "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"
+  access_key = '${{ secrets.TF_USER_AWS_KEY }}'
+  secret_key = '${{ secrets.TF_USER_AWS_SECRET }}'
 }
 
 resource "aws_instance" "dogmeetsdog_server" {
